@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>07271a09-a5d3-4f87-a23c-054159887e3f</UserSecretsId>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="6.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.12" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.35.0" />
+		 <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.35.0" />
+	
+	</ItemGroup>
+
+
+	<ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TodoLibrary\TodoLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
